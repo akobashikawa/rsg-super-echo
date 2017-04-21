@@ -8,6 +8,7 @@ window.jQuery = $;
 require('bootstrap');
 
 import logo from './logo.svg';
+import SuperEcho from './SuperEcho';
 import './App.css';
 
 const Navbar = (props) => (
@@ -25,23 +26,6 @@ const Navbar = (props) => (
 
 class App extends Component {
   
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      echo: ''
-    };
-  }
-
-  superEcho(s) {
-    return s.toUpperCase();
-  }
-
-  changeHandler(event) {
-    const echo = this.superEcho(event.target.value);
-    this.setState({echo});
-  }
-
   render() {
     return (
       <div className="App">
@@ -49,18 +33,7 @@ class App extends Component {
         <Navbar title="Super Echo" />
 
         <div className="main">
-          <div className="SuperEcho">
-            <div className="container">
-              <textarea
-                className="form-control"
-                placeholder="Write here"
-                onChange={event => this.changeHandler(event)}
-              ></textarea>
-              {this.state.echo && (
-                <pre className="bg-info superecho-output">{this.state.echo}</pre>
-              )}
-            </div>
-          </div>
+          <SuperEcho />
         </div>
 
       </div>
