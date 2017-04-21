@@ -31,7 +31,7 @@ class App extends Component {
         <div className="main">
           <div className="SuperEcho">
             <div className="container">
-              <textarea cols="30" rows="10" className="form-control">super echo</textarea>
+              <textarea className="form-control">super echo</textarea>
               <p className="bg-info superecho-output">SUPER ECHO</p>
             </div>
           </div>
