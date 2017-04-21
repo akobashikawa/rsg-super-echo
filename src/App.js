@@ -27,7 +27,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        
         <Navbar title="Super Echo" />
+
         <div className="main">
           <div className="SuperEcho">
             <div className="container">
@@ -36,6 +38,7 @@ class App extends Component {
             </div>
           </div>
         </div>
+        
       </div>
     );
   }
