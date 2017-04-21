@@ -29,9 +29,12 @@ class App extends Component {
       <div className="App">
         <Navbar title="Super Echo" />
         <div className="main">
-          <p className="App-intro">
-            To get started, edit <code>src/App.js</code> and save to reload.
-          </p>
+          <div className="SuperEcho">
+            <div className="container">
+              <textarea cols="30" rows="10" className="form-control">super echo</textarea>
+              <p className="bg-info superecho-output">SUPER ECHO</p>
+            </div>
+          </div>
         </div>
       </div>
     );
